@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func Page(w http.ResponseWriter, r *http.Request) {
+func Index(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	w.WriteHeader(http.StatusOK)
 	for _, e := range os.Environ() {
